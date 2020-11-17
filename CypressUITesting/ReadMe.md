@@ -6,6 +6,9 @@
 Use the following command to open Cypress Runner
 `npx cypress open` to open Cypress Runner
 
+## Recomended Tooling
+Ranorex Selocity - Allows you to easily scrape CSS/XPATH Locators
+
 ## Future Implementation
 💡 https://docs.cypress.io/guides/guides/continuous-integration.html#Setting-up-CI
 💡 https://docs.cypress.io/guides/guides/parallelization.html#Turning-on-parallelization

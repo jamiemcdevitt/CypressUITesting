@@ -1,0 +1,6 @@
+{
+    "loginButton": ".header_user_info [rel]",
+    "signInButton": "button#SubmitLogin > span",
+    "emailTxtField": "input#email",
+    "passwordTxtField": "input#passwd"
+}

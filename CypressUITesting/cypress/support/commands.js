@@ -25,15 +25,7 @@
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 /// <reference types="cypress" />
 
-Cypress.Commands.add('login', () => {
-    cy.openLandingPage();
-    cy.get('a[class="login"]').click();
-
-    cy.get('input[id="email"]').type('TestUser@TestUser.ie');
-    cy.get('input[id="passwd"]').type('3YkBPukfdKwnMg');
-
-    cy.get('button[id="SubmitLogin"]').click();    
-});
+import "./authentication/login.ts"
 
 Cypress.Commands.add('openLandingPage', () => {
     cy.visit(Cypress.config().siteUrl);    

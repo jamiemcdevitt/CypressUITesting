@@ -1,26 +1,27 @@
   /// <reference types="Cypress" />
 
-
-describe('Account Page Validation', ()=>{
-    const testName = "Account Page Checks"  
-    it(testName,() =>{           
-        cy.login()
+describe('Account Page Validation', ()=>{    
+    
+    const testName = "Account Page Checks" 
+    it(testName,() =>{
+        cy.login();
 
         cy.get('h1[class="page-heading"]').invoke('text').then((text => {
             expect(text.trim().toUpperCase()).to.eq('MY ACCOUNT')
         }));        
-    })
+    })    
 })
 describe('Home Page Validation', ()=>{
-    const testName = "Home Page Checks"  
-    it(testName,() =>{
-        cy.login()
+
+    const testName = "Home Page Checks"
+    it(testName,() =>{        
+        cy.login();
 
         cy.get('a[title="Home"]').click();
-            cy.get('a.account').invoke('text').then((text => {
-                expect(text.trim()).to.eq('TestUserFirstName TestUserLastName')
+        cy.get('a.account').invoke('text').then((text => {
+            expect(text.trim()).to.eq('TestUserFirstName TestUserLastName')
         }));        
-    })
+    })    
 })
 describe('Tshirt Menu Validation', ()=>{
     const testName = "Menu Validation Checks"

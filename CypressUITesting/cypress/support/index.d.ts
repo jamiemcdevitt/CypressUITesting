@@ -7,11 +7,13 @@ declare namespace Cypress {
        * @example
        * cy.createDefaultTodos()
        */
-      login(): Chainable<any>
+      login(email?: string, password?: string): Chainable<any>
       /**
        * Logs into the application
+       * email - Email address for user
+       * password - Password for user
        * @example
-       * cy.login()
+       * cy.login(email, password)
        */
       openLandingPage(): Chainable<any>
       /**
